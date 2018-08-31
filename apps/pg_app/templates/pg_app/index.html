@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>PMP - Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PG - Homepage</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/pg_app/style.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script>
         $(document).ready(function() {
+            $('a[href^="#"]').click(function(e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(this.hash);
+
+                $('html, body').animate({
+                    'scrollTop': $target.offset().top
+                }, 1000, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
         });
     </script>
 </head>
@@ -17,10 +33,10 @@
         <div class="header">
             <p class="title">Prototype Gallery <span>by Erine Natnat and Ashwin Chalaka</span></p>
             <!-- <button id="drop_button">&#9776;</button> -->
-            <!--    Made by Erik Terwan    -->
-            <!--   24th of November 2015   -->
-            <!--        MIT License        -->
             <nav role='navigation'>
+                <!--    Made by Erik Terwan    -->
+                <!--   24th of November 2015   -->
+                <!--        MIT License        -->
                 <div id="menuToggle">
                 <!--
                 A fake / hidden checkbox is used as click reciever,
@@ -57,33 +73,37 @@
             <div class="description">
                 <p class="one_sent_summary">Welcome to Prototype Gallery.</p>
                 <p class="details">This website is a colloboration exhibiting many HTML5/CSS3 templates and using jQuery/Ajax to uncover the instructions to add such features. We believe in designing websites to the extent that they are beautiful and intuitive for the user.</p>
-                <button>Let's Get Started.</button>
+                <a href="#first_section">Let's Get Started.</a>
             </div>
         </div>
     
-        <!-- <div class="first_section">
-            <p class="sect_title"></p>
-            <p class="sect_details"></p>
-            <div class="diagram"></div>
-        </div> -->
+        <div id="first_section">
+            <p class="sect_title">Mission Statement</p>
+            <p class="sect_details">Influencing software engineers to pay more attention to how front-end can simplify and allow easy utilization of a web product. We combine our built-from-scratch CSS knowledge with a deep influence from more advanced CSS/JavaScript techniques to deliver instructional content to UX designers.</p>
+            <!-- <div class="diagram"><p>Features Diagram...(1)Browse Full Website Templates (2) Live Interaction shows how to accomplish features (3) Search by feature.</p></div> -->
+        </div>
 
-        <!-- <div class="footer">
-            <p class="copyright">&#169;prototype gallery. All rights reserved 2018.</p>
-            <p class="link_icons">twitter, facebook, instagram, github</p>
-        </div> -->
-    
-        <!-- <div class="example_link">
-            <div id="link_half">
-                <p class="sect_title"></p>
-                <p class="sect_details"></p>
-                <button>Link to a good example.</button>
+        <div class="example_link">
+            <div class="link_half">
+                <p class="sect_title">How Instructables Work</p>
+                <p class="sect_details">Take a look at how this homepage would appear in our gallery as an instructable.</p>
+                <a href="">Link to go to this example.</a>
             </div>
-            <div id="img_half">
-                <img src="#" alt="#">
-            </div>
+            <div class="img_half">Placeholder</div>
+        </div>    
+
+        <div class="footer">
+            <p class="copyright">&#169; Prototype Gallery. All rights reserved.</p>
+            <p class="link_icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </p>
         </div>
     
-        <div class="more_examples">
+        <!-- <div class="more_examples">
             <p class="sect_title"></p>
             <p class="sect_details"></p>
             <div class="examples_sidescroll">

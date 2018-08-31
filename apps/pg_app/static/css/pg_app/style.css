@@ -1,35 +1,27 @@
+/*********************************************************************************/
 * {
     margin: 0px;
     padding: 0px;
 }
 body {
-    /* background-image: linear-gradient(to top right, rgb(28,47,70), rgb(238,203,182)); */
     background-image: linear-gradient(to top right, rgb(68,73,79), rgb(250,244,235));
-    /* background-image: url("/static/img/pg_app/index_background.jpg"); */
-    background-size: 1750px, cover;
-    /* background-attachment: scroll, fixed; */
-    /* background-repeat: repeat, no-repeat; */
-    /* background-position: left top, center 0px; */
-    /* background-size: contain; */
-    /* min-height: 100%; */
-    /* min-width:1024px; */
-    /* width:100%; */
-    /* height:auto; */
-    /* position: absolute; */
-    /* overflow: hidden; */
-    /* top:0;
-    left:0; */
 }
+
+/*********************************************************************************/
 div.container {
+/*********************************************************************************/
     width: 95%;
     min-height: 800px;
     margin: 30px auto;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     border-radius: 10px;
     padding-top: 0.1px;
     
 }
+
+/*********************************************************************************/
 div.container div.header {
+/*********************************************************************************/
     width: 100%;
     height: 60px;
     background-color: white;
@@ -54,22 +46,15 @@ div.container div.header {
         width: 5%;
         font-size: 20px;
     }
-
-.button:hover {background-color: #3e8e41}
-
-.button:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-
-
 div.container div.header p.title span {
     color: grey;
 }
+
+/*********************************************************************************/
 div.container div.jumbotron {
+/*********************************************************************************/
     width: 100%;
-    min-height: 450px;
+    min-height: 500px;
     background-image: url("/static/img/pg_app/index_background.jpg");
     background-size: cover;
     padding-top: 0.1px;
@@ -87,31 +72,129 @@ div.container div.jumbotron {
         div.container div.jumbotron div.description p.one_sent_summary {
             color: white;
             font-size: 36px;
-            padding-top: 75px;
+            padding-top: 80px;
         }
         div.container div.jumbotron div.description p.details {
             color: white;
             font-size: 14px;
-            padding-top: 20px;
+            padding-top: 25px;
             padding-left: 30px;
             padding-right: 30px;
         }
-        div.container div.jumbotron div.description button {
+        div.container div.jumbotron div.description a {
             display: inline-block;
             padding: 10px;
             border-color: white;
             background: none;
             color: white;
             width: 200px;
-            font-size: 16px;
+            font-size: 18px;
+            border: 1px solid white;
             border-radius: 5px;
             margin-top: 35px;
             margin-bottom: 40px;
             /* box-shadow: 0 9px #999; */
         }
 
-        
+/*********************************************************************************/
+div.container div#first_section {
+/*********************************************************************************/
+    width: 100%;
+    min-height: 500px;
+    background-color: white;
+    text-align: center;
+    padding-top: 0.1px;
+}
+    div.container div#first_section p.sect_title {
+        color: rgb(46,59,108);
+        font-size: 36px;
+        margin-top: 85px;
+    }
+    div.container div#first_section p.sect_details {
+        font-size: 16px;
+        margin: 40px 20% 0;
+    }
+    div.container div#first_section div.diagram {
+        width: 80%;
+        height: 150px;
+        background-color: greenyellow;
+        margin: 40px 10% 0;
+    }
+        div.container div#first_section div.diagram p {
+            font-size: 30px;
+            padding: 30px;
+        }
 
+/*********************************************************************************/
+div.container div.example_link {
+/*********************************************************************************/
+    width: 100%;
+    min-height: 375px;
+    font-size: 0px;
+}
+    div.container div.example_link div.link_half {
+        background-image: linear-gradient(to top right, rgb(28,47,70), rgb(238,203,182));
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        min-height: 375px;
+        text-align: left;
+    }
+        div.container div.example_link div.link_half p.sect_title {
+            color: white;
+            font-size: 36px;
+            margin: 80px 10% 0;
+        }
+        div.container div.example_link div.link_half p.sect_details {
+            color: white;
+            font-size: 16px;
+            margin: 40px 10%;
+        }
+        div.container div.example_link div.link_half a {
+            color: white;
+            font-size: 18px;
+            margin: 40px 10% 0;
+            text-decoration: none;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 2% 5%;
+        }
+    div.container div.example_link div.img_half {
+        display: inline-block;
+        vertical-align: top;
+        width: 49.5%;
+        min-height: 375px;
+    }
+
+/*********************************************************************************/
+div.container div.footer {
+/*********************************************************************************/
+    width: 100%;
+    min-height: 80px;
+    background-color: rgb(235,235,235);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 0.1px;
+}
+    div.container div.footer p {
+        display: inline-block;
+        vertical-align: top;
+        margin: 30px 50px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    div.container div.footer p.link_icons {
+        display: inline-block;
+        margin-left: 40%;
+        vertical-align: top;
+    }
+        div.container div.footer p.link_icons i.fab {
+            font-size: 30px;
+            display: inline-block;
+            vertical-align: top;
+        }
+/*********************************************************************************/
+/* Media Queries */
+/*********************************************************************************/
 @media only screen and (max-width: 480px){
     div.header p.title span {
         display: none;
@@ -119,15 +202,44 @@ div.container div.jumbotron {
     div.container div.jumbotron div.description p.one_sent_summary {
         padding-top: 40px;
     }
+    div.container div.footer p {
+        margin: 10px;
+        text-align: center;
+    }
+    div.container div.footer p.link_icons {
+        margin: 10px 100px;
+    }
+    div.container div.example_link div.link_half {
+        width: 100%;
+    }
+    div.container div.example_link div.img_half {
+        width: 100%;
+    }
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (max-width: 590px) {
+    div.header p.title span {
+        display: none;
+    }
+    div.container div.example_link div.link_half {
+        width: 100%;
+    }
+    div.container div.example_link div.img_half {
+        width: 100%;
+    }
 }
 
+@media only screen and (min-width: 591px) {
+}
+/*********************************************************************************/
 
-/**********************************************************************************
-************************************* Menu Hamburger ******************************
-**********************************************************************************/
+
+
+
+
+/*********************************************************************************/
+/* Menu Hamburger */
+/*********************************************************************************/
 /*
  * Made by Erik Terwan
  * 24th of November 2015
