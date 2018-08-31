@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PMP - Homepage</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/pg_app/style.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        });
+    </script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <p class="title">Prototype Gallery <span>by Erine Natnat and Ashwin Chalaka</span></p>
+            <!-- <button id="drop_button">&#9776;</button> -->
+            <!--    Made by Erik Terwan    -->
+            <!--   24th of November 2015   -->
+            <!--        MIT License        -->
+            <nav role='navigation'>
+                <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox" />
+                
+                <!--
+                Some spans to act as a hamburger.
+                
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+                <ul id="menu">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Info</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="#" target="_blank"><li>Show me more</li></a>
+                </ul>
+                </div>
+            </nav>
+        </div>
+    
+        <div class="jumbotron">
+            <div class="description">
+                <p class="one_sent_summary">Welcome to Prototype Gallery.</p>
+                <p class="details">This website is a colloboration exhibiting many HTML5/CSS3 templates and using jQuery/Ajax to uncover the instructions to add such features. We believe in designing websites to the extent that they are beautiful and intuitive for the user.</p>
+                <button>Let's Get Started.</button>
+            </div>
+        </div>
+    
+        <!-- <div class="first_section">
+            <p class="sect_title"></p>
+            <p class="sect_details"></p>
+            <div class="diagram"></div>
+        </div> -->
+
+        <!-- <div class="footer">
+            <p class="copyright">&#169;prototype gallery. All rights reserved 2018.</p>
+            <p class="link_icons">twitter, facebook, instagram, github</p>
+        </div> -->
+    
+        <!-- <div class="example_link">
+            <div id="link_half">
+                <p class="sect_title"></p>
+                <p class="sect_details"></p>
+                <button>Link to a good example.</button>
+            </div>
+            <div id="img_half">
+                <img src="#" alt="#">
+            </div>
+        </div>
+    
+        <div class="more_examples">
+            <p class="sect_title"></p>
+            <p class="sect_details"></p>
+            <div class="examples_sidescroll">
+                <ul class="examples_thumbnails">
+                    <li>
+                        <img src="#" alt="#">
+                        <p class="example_details"></p>
+                    </li>
+                    <li>
+                        <img src="#" alt="#">
+                        <p class="example_details"></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="newsletter">
+            <p class="sect_title"></p>
+            <p class="sect_details"></p>
+            <form action="">
+                <input type="text" placeholder="email address">
+                <input type="submit" value="sign up">
+            </form>
+        </div>
+    
+        <div class="contact">
+            <p class="sect_title"></p>
+            <p class="sect_details"></p>
+            <div class="creator_contactinfo">
+                <div class="erine">
+                    <img src="" alt="">
+                    <p class="name"></p>
+                    <p class="location"></p>
+                </div>
+                <div class="ashwin">
+                    <img src="" alt="">
+                    <p class="name"></p>
+                    <p class="location"></p>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+</body>
+</html>
