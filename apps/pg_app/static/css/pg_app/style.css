@@ -33,6 +33,7 @@ div.container div.header {
 }
     div.container div.header p.title {
         display: inline-block;
+        vertical-align: top;
         padding-top: 25px;
         padding-left: 30px;
         color: black;
